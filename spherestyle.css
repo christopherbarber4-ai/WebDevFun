@@ -1,0 +1,49 @@
+
+body{
+    background-color: black;
+}
+
+.dot:hover:before {
+    content: '';
+    position: fixed;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+}
+
+.container{
+    
+  
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+
+
+}
+.dot {
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0px 0px 100px white;
+  background: radial-gradient(circle at 100px 100px, rgba(255, 255, 255, 0.452), black);
+
+
+ 
+
+}
+
+.dot:hover {
+  background-color: black;
+  font-size: 18px;
+  box-shadow: 0px 0px 100px black;
+
+
+}
