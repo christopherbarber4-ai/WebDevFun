@@ -34,10 +34,32 @@ body{
   border-radius: 50%;
   box-shadow: 0px 0px 100px white;
   background: radial-gradient(circle at 100px 100px, rgba(255, 255, 255, 0.452), black);
+  animation: sphereShadow 5s ease-out infinite; 
 
 
  
 
+}
+
+
+@keyframes sphereShadow {
+ 0% {
+ box-shadow: 0px 0px 0px white;
+
+ }
+ 20% {
+ transform: none;
+ }
+ 25%, 44% {
+ transform: none;
+ }
+ 50%, 60% {
+ transform: none;
+ }
+ 66%, 100% {
+ box-shadow: 0px 0px 100px white;
+
+ }
 }
 
 .dot:hover {
@@ -47,3 +69,5 @@ body{
 
 
 }
+
+
